@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cicekler_detay">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/detayResim"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="50dp"
+                app:srcCompat="@drawable/kasimpati" />
+
+            <TextView
+                android:id="@+id/detayAdi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Çiçek Adı"
+                android:textAlignment="center"
+                android:textColor="@color/baslik"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/detayAciklama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="1dp"
+                android:text="Çiçek Açıklama"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/aciklama"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
